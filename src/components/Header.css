@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #d4f7cd;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo img {
+  width: 200px;
+  height: 90px;
+}
+
+.logo h2 {
+  color: rgb(84, 172, 57);
+  margin: 0;
+  font-size: 24px;
+}
+
+.header ul {
+  display: flex;
+  list-style: none;
+  gap: 18px;
+}
+
+.header li {
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.header li:hover {
+  color: #60a5fa;
+}
