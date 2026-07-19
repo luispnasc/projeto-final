@@ -1,22 +1,26 @@
-import "./ProductCard.css";
+import { Link } from "react-router-dom";
+import "./Productcard.css";
 
-function ProductCard({ produto }) {
+function Productcard({ produto }) {
   return (
-    <div className="card">
+    <Link to={`/product/${produto.id}`} className="card-link">
+      <div className="card">
+        <img
+          src={produto.image}
+          alt={produto.title}
+        />
 
-      <img
-        src={produto.image}
-        alt={produto.title}
-      />
+        <h3>{produto.title}</h3>
 
-      <h3>{produto.title}</h3>
-
-      <p className="preco">
-        R$ {produto.price}
-      </p>
-
-    </div>
+        <p className="preco">
+          {produto.price.toLocaleString("pt-BR", {
+            style: "currency",
+            currency: "BRL",
+          })}
+        </p>
+      </div>
+    </Link>
   );
 }
 
-export default ProductCard;
+export default Productcard;

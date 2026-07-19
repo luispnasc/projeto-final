@@ -32,3 +32,13 @@
     font-size:22px;
     font-weight:bold;
 }
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.card {
+  cursor: pointer;
+} 

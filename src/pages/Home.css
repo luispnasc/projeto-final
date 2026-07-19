@@ -22,3 +22,32 @@
     margin-bottom:40px;
 
 }
+
+.categorias {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.categorias button {
+  padding: 10px 18px;
+  border: 1px solid #69c347;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #69c347;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.categorias button:hover {
+  background-color: #69c347;
+  color: white;
+}
+
+.categorias .categoria-ativa {
+  background-color: #69c347;
+  color: white;
+}

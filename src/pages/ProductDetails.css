@@ -1,0 +1,37 @@
+.product-details {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.product-details img {
+  width: 280px;
+  height: 280px;
+  object-fit: contain;
+  margin-bottom: 30px;
+}
+
+.product-details h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.product-details .preco {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00b300;
+  margin-bottom: 20px;
+}
+
+.product-details p {
+  line-height: 1.6;
+}
+
+.voltar {
+  display: inline-block;
+  margin-bottom: 30px;
+  text-decoration: none;
+  color: #6bbf59;
+  font-weight: bold;
+}
