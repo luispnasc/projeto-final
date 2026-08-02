@@ -1,0 +1,81 @@
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  min-height: 110px;
+  padding: 12px 55px;
+  background-color: var(--header-background);
+  transition: background-color 0.3s ease;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header-logo a {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo img {
+  display: block;
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+}
+
+.header-brand {
+  text-align: center;
+}
+
+.header-brand h2 {
+  margin: 0;
+  color: var(--primary);
+  font-size: 28px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 25px;
+}
+
+.header-nav a {
+  color: var(--text);
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.header-nav a:hover {
+  color: var(--primary);
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  color: var(--text);
+  background-color: transparent;
+  border: 1px solid var(--primary);
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 19px;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.theme-toggle:hover {
+  color: #ffffff;
+  background-color: var(--primary);
+  transform: rotate(12deg);
+}
